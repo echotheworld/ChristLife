@@ -10,7 +10,7 @@ interface TypingAnimationProps {
 export default function TypingAnimation({
   phrases = [
     "Welcome To Christ Life Bacoor",
-    "Welcome To God&apos;s Family",
+    "Welcome To God's Family",
     "Welcome Home"
   ],
   className = "",
