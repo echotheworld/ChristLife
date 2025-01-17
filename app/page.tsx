@@ -671,7 +671,7 @@ export default function Home() {
             <div className="w-full space-y-3 sm:space-y-4">
               {/* Location FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-none">
                   <span>Where are you located?</span>
                   <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -686,8 +686,8 @@ export default function Home() {
 
               {/* First Time FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">What can I expect when I attend for the first time?</span>
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-none">
+                  <span>What can I expect when I attend for the first time?</span>
                   <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
