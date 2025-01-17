@@ -1,5 +1,5 @@
 import { initializeApp, getApps } from 'firebase/app';
-import { getDatabase } from 'firebase/database';
+import { getDatabase, Database } from 'firebase/database';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -12,20 +12,9 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-let firebaseApp;
-if (!getApps().length) {
-  try {
-    firebaseApp = initializeApp(firebaseConfig);
-  } catch (error) {
-    console.error('Error initializing Firebase:', error);
-    throw error;
-  }
-} else {
-  firebaseApp = getApps()[0];
-}
+let app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
 
-// Export the app instance
-export const app = firebaseApp;
+// Initialize Realtime Database
+const database = getDatabase(app);
 
-// Initialize Realtime Database with explicit URL
-export const database = getDatabase(app, process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL); 
+export { app, database }; 

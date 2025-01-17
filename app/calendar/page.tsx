@@ -17,7 +17,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { getDatabase, ref, onValue, remove } from "firebase/database";
-import { app } from "@/lib/firebase";
+import { database } from "@/lib/firebase";
 import { motion } from "framer-motion";
 
 const formatDescription = (text: string) => {
@@ -43,43 +43,56 @@ export default function CalendarPage() {
   };
 
   useEffect(() => {
-    const db = getDatabase(app);
-    const eventsRef = ref(db, 'events');
-    const unsubscribe = onValue(eventsRef, (snapshot) => {
-      const data = snapshot.val();
-      if (data) {
-        const eventsList = Object.entries(data).map(([id, event]: [string, any]) => ({
-          id,
-          ...event
-        }));
+    if (!database) {
+      console.error('Database not initialized');
+      return;
+    }
 
-        // Sort events by date and time
-        const sortedEvents = eventsList.sort((a, b) => {
-          const dateA = new Date(a.date + ' ' + a.endTime);
-          const dateB = new Date(b.date + ' ' + b.endTime);
-          return dateA.getTime() - dateB.getTime();
-        });
+    try {
+      const eventsRef = ref(database, 'events');
+      const unsubscribe = onValue(eventsRef, (snapshot) => {
+        const data = snapshot.val();
+        if (data) {
+          const eventsList = Object.entries(data).map(([id, event]: [string, any]) => ({
+            id,
+            ...event
+          }));
 
-        // Filter out past events and delete them from database
-        const now = new Date();
-        const currentEvents = sortedEvents.filter(event => {
-          const eventEndTime = new Date(event.date + ' ' + event.endTime);
-          const isPastEvent = eventEndTime < now;
-          
-          // Delete past events from database
-          if (isPastEvent) {
-            const eventRef = ref(db, `events/${event.id}`);
-            remove(eventRef);
-          }
-          
-          return !isPastEvent;
-        });
+          // Sort events by date and time
+          const sortedEvents = eventsList.sort((a, b) => {
+            const dateA = new Date(a.date + ' ' + a.endTime);
+            const dateB = new Date(b.date + ' ' + b.endTime);
+            return dateA.getTime() - dateB.getTime();
+          });
 
-        setEvents(currentEvents);
-      }
-    });
+          // Filter out past events and delete them from database
+          const now = new Date();
+          const currentEvents = sortedEvents.filter(event => {
+            const eventEndTime = new Date(event.date + ' ' + event.endTime);
+            const isPastEvent = eventEndTime < now;
+            
+            // Delete past events from database
+            if (isPastEvent && database) {
+              const eventRef = ref(database, `events/${event.id}`);
+              remove(eventRef).catch(error => {
+                console.error('Error removing past event:', error);
+              });
+            }
+            
+            return !isPastEvent;
+          });
 
-    return () => unsubscribe();
+          setEvents(currentEvents);
+        } else {
+          setEvents([]);
+        }
+      });
+
+      return () => unsubscribe();
+    } catch (error) {
+      console.error('Error fetching events:', error);
+      setEvents([]);
+    }
   }, []);
 
   const handleCopyLink = () => {
