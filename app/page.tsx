@@ -668,10 +668,10 @@ export default function Home() {
               <p className="text-lg sm:text-xl text-gray-500">Everything you need to know about joining us</p>
             </div>
 
-            <div className="w-full space-y-3 sm:space-y-4">
+            <div className="w-full space-y-3 sm:space-y-4 [&_details]:marker-none [&_summary]:marker-none [&_summary::-webkit-details-marker]:hidden [&_summary::marker]:hidden">
               {/* Location FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-['']">
                   <span className="flex-1">Where are you located?</span>
                   <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
