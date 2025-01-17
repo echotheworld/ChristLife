@@ -481,144 +481,130 @@ export default function About() {
 
           <div className="max-w-3xl mx-auto space-y-4 sm:space-y-6">
             {/* God */}
-            <div className="group">
-              <button className="w-full flex items-center justify-between p-4 sm:p-6 bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-[#3945cb] text-left">God</h3>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
+              <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
+                <span>God</span>
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
-              <div className="overflow-hidden transition-all duration-300 max-h-0 group-hover:max-h-96">
-                <div className="p-4 sm:p-6 bg-white">
-                  <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
-                    There&apos;s one God who exists in three persons: Father, Son (Jesus), and Holy Spirit. He created everything, loves everyone, and invites all people into relationship with Him.
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-500 italic">
-                    [Genesis 1:1; Deuteronomy 6:4; Matthew 3:16-17; John 3:16-17; 2 Corinthians 13:14]
-                  </p>
-                </div>
+              </summary>
+              <div className="p-4 sm:p-6 bg-white">
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  There&apos;s one God who exists in three persons: Father, Son (Jesus), and Holy Spirit. He created everything, loves everyone, and invites all people into relationship with Him.
+                </p>
+                <p className="text-xs sm:text-sm text-gray-500 italic">
+                  [Genesis 1:1; Deuteronomy 6:4; Matthew 3:16-17; John 3:16-17; 2 Corinthians 13:14]
+                </p>
               </div>
-            </div>
+            </details>
 
             {/* Jesus Christ */}
-            <div className="group">
-              <button className="w-full flex items-center justify-between p-4 sm:p-6 bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-[#3945cb] text-left">Jesus Christ</h3>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
+              <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
+                <span>Jesus Christ</span>
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
-              <div className="overflow-hidden transition-all duration-300 max-h-0 group-hover:max-h-96">
-                <div className="p-4 sm:p-6 bg-white">
-                  <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
-                    Jesus is God who became human. He lived the perfect life we couldn&apos;t live, died the death we deserved, and rose again to prove He was who He said He was. Through His life, death, and resurrection, He made a way back to God for everyone.
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-500 italic">
-                    [John 1:14; Colossians 1:15-20; Philippians 2:5-11; 1 Corinthians 15:3-8; Romans 5:8]
-                  </p>
-                </div>
+              </summary>
+              <div className="p-4 sm:p-6 bg-white">
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  Jesus is God who became human. He lived the perfect life we couldn&apos;t live, died the death we deserved, and rose again to prove He was who He said He was. Through His life, death, and resurrection, He made a way back to God for everyone.
+                </p>
+                <p className="text-xs sm:text-sm text-gray-500 italic">
+                  [John 1:14; Colossians 1:15-20; Philippians 2:5-11; 1 Corinthians 15:3-8; Romans 5:8]
+                </p>
               </div>
-            </div>
+            </details>
 
             {/* Holy Spirit */}
-            <div className="group">
-              <button className="w-full flex items-center justify-between p-4 sm:p-6 bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-[#3945cb] text-left">Holy Spirit</h3>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
+              <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
+                <span>Holy Spirit</span>
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
-              <div className="overflow-hidden transition-all duration-300 max-h-0 group-hover:max-h-96">
-                <div className="p-4 sm:p-6 bg-white">
-                  <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
-                    The Holy Spirit is God&apos;s presence in our lives from the moment we trust Jesus. He&apos;s not weird or scary – He&apos;s our helper who transforms us from the inside out, producing the kind of life we&apos;ve always wanted but couldn&apos;t achieve on our own.
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-500 italic">
-                    [John 14:16-17; Galatians 5:22-23; Romans 8:26; Acts 1:8; Ephesians 1:13-14]
-                  </p>
-                </div>
+              </summary>
+              <div className="p-4 sm:p-6 bg-white">
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  The Holy Spirit is God&apos;s presence in our lives from the moment we trust Jesus. He&apos;s not weird or scary – He&apos;s our helper who transforms us from the inside out, producing the kind of life we&apos;ve always wanted but couldn&apos;t achieve on our own.
+                </p>
+                <p className="text-xs sm:text-sm text-gray-500 italic">
+                  [John 14:16-17; Galatians 5:22-23; Romans 8:26; Acts 1:8; Ephesians 1:13-14]
+                </p>
               </div>
-            </div>
+            </details>
 
             {/* Humanity */}
-            <div className="group">
-              <button className="w-full flex items-center justify-between p-4 sm:p-6 bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-[#3945cb] text-left">Humanity</h3>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
+              <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
+                <span>Humanity</span>
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
-              <div className="overflow-hidden transition-all duration-300 max-h-0 group-hover:max-h-96">
-                <div className="p-4 sm:p-6 bg-white">
-                  <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
-                    Every person matters to God. Period. We&apos;re all created in God&apos;s image with incredible value, but we&apos;re also all broken by sin. The good news? God loves us anyway and has a plan to restore us.
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-500 italic">
-                    [Genesis 1:27; Psalm 139:13-16; Romans 3:23; 1 John 4:9-10; 2 Corinthians 5:17-18]
-                  </p>
-                </div>
+              </summary>
+              <div className="p-4 sm:p-6 bg-white">
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  Every person matters to God. Period. We&apos;re all created in God&apos;s image with incredible value, but we&apos;re also all broken by sin. The good news? God loves us anyway and has a plan to restore us.
+                </p>
+                <p className="text-xs sm:text-sm text-gray-500 italic">
+                  [Genesis 1:27; Psalm 139:13-16; Romans 3:23; 1 John 4:9-10; 2 Corinthians 5:17-18]
+                </p>
               </div>
-            </div>
+            </details>
 
             {/* Salvation */}
-            <div className="group">
-              <button className="w-full flex items-center justify-between p-4 sm:p-6 bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-[#3945cb] text-left">Salvation</h3>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
+              <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
+                <span>Salvation</span>
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
-              <div className="overflow-hidden transition-all duration-300 max-h-0 group-hover:max-h-96">
-                <div className="p-4 sm:p-6 bg-white">
-                  <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
-                    Salvation is God&apos;s gift to us, not something we earn. It&apos;s as simple as trust: we trust what Jesus did for us rather than what we can do for ourselves. This brings forgiveness for our past, purpose for our present, and hope for our future.
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-500 italic">
-                    [Ephesians 2:8-9; Romans 6:23; John 3:16-17; Titus 3:4-7; 2 Corinthians 5:21]
-                  </p>
-                </div>
+              </summary>
+              <div className="p-4 sm:p-6 bg-white">
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  Salvation is God&apos;s gift to us, not something we earn. It&apos;s as simple as trust: we trust what Jesus did for us rather than what we can do for ourselves. This brings forgiveness for our past, purpose for our present, and hope for our future.
+                </p>
+                <p className="text-xs sm:text-sm text-gray-500 italic">
+                  [Ephesians 2:8-9; Romans 6:23; John 3:16-17; Titus 3:4-7; 2 Corinthians 5:21]
+                </p>
               </div>
-            </div>
+            </details>
 
             {/* The Bible */}
-            <div className="group">
-              <button className="w-full flex items-center justify-between p-4 sm:p-6 bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-[#3945cb] text-left">The Bible</h3>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
+              <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
+                <span>The Bible</span>
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
-              <div className="overflow-hidden transition-all duration-300 max-h-0 group-hover:max-h-96">
-                <div className="p-4 sm:p-6 bg-white">
-                  <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
-                    The Bible is God&apos;s story of love for the world. Written over centuries by various authors inspired by God, it shows us who God is and how to live life His way. It&apos;s truthful, practical, and still relevant today.
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-500 italic">
-                    [2 Timothy 3:16-17; Psalm 119:105; Hebrews 4:12; 2 Peter 1:20-21; Joshua 1:8]
-                  </p>
-                </div>
+              </summary>
+              <div className="p-4 sm:p-6 bg-white">
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  The Bible is God&apos;s story of love for the world. Written over centuries by various authors inspired by God, it shows us who God is and how to live life His way. It&apos;s truthful, practical, and still relevant today.
+                </p>
+                <p className="text-xs sm:text-sm text-gray-500 italic">
+                  [2 Timothy 3:16-17; Psalm 119:105; Hebrews 4:12; 2 Peter 1:20-21; Joshua 1:8]
+                </p>
               </div>
-            </div>
+            </details>
 
             {/* The Return of Jesus */}
-            <div className="group">
-              <button className="w-full flex items-center justify-between p-4 sm:p-6 bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-[#3945cb] text-left">The Return of Jesus</h3>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
+              <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
+                <span>The Return of Jesus</span>
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
-              <div className="overflow-hidden transition-all duration-300 max-h-0 group-hover:max-h-96">
-                <div className="p-4 sm:p-6 bg-white">
-                  <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
-                    Jesus promised He would return to make everything right. While we don&apos;t know when, we live with hope and purpose, inviting others to be ready for that day by following Jesus now.
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-500 italic">
-                    [Acts 1:11; Matthew 24:36; Revelation 21:1-5; 1 Thessalonians 4:13-18; Titus 2:11-14]
-                  </p>
-                </div>
+              </summary>
+              <div className="p-4 sm:p-6 bg-white">
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  Jesus promised He would return to make everything right. While we don&apos;t know when, we live with hope and purpose, inviting others to be ready for that day by following Jesus now.
+                </p>
+                <p className="text-xs sm:text-sm text-gray-500 italic">
+                  [Acts 1:11; Matthew 24:36; Revelation 21:1-5; 1 Thessalonians 4:13-18; Titus 2:11-14]
+                </p>
               </div>
-            </div>
+            </details>
           </div>
 
           {/* Final Note */}
@@ -667,10 +653,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Content Area */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Add your about page content here */}
-      </div>
+
 
       {/* Footer */}
       <footer className="bg-white border-t border-gray-100">

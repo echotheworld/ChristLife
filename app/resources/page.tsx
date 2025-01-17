@@ -798,39 +798,41 @@ export default function Resources() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: category.id * 0.1 }}
-                className="mb-8"
+                className="mb-4"
               >
                 <div 
-                  className={cn(
-                    "border-b border-gray-200 mb-6",
-                    expandedCategories.includes(category.id) ? "bg-white/50 rounded-t-lg" : ""
-                  )}
+                  key={category.id} 
+                  className={`border-b border-gray-100 last:border-b-0 rounded-lg shadow-sm hover:shadow-md ${expandedCategories.includes(category.id) ? 'bg-white' : 'bg-white/50'}`}
                 >
                   <button
                     onClick={() => toggleCategory(category.id)}
-                    className="w-full text-left py-4 px-4 flex items-center justify-between group focus:outline-none"
+                    className="w-full px-5 py-4 flex items-start justify-between transition-all duration-200"
                   >
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#3945cb] transition-colors duration-200 flex items-center gap-2">
-                        {category.title}
-                        <span className="text-sm font-normal text-gray-400">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-start justify-between gap-2">
+                        <h3 className="text-lg font-semibold text-[#3945cb] text-left leading-tight">
+                          {category.title}
+                        </h3>
+                        <span className="text-sm text-gray-500 flex-shrink-0 pt-1">
                           ({category.books.length} books)
                         </span>
-                      </h3>
-                      <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-600 transition-colors duration-200">
+                      </div>
+                      <p className="text-gray-600 text-sm mt-1 text-left line-clamp-2">
                         {category.description}
                       </p>
                     </div>
-                    <motion.svg
-                      animate={{ rotate: expandedCategories.includes(category.id) ? 180 : 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="w-5 h-5 text-gray-400 group-hover:text-[#3945cb] transition-colors duration-200"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </motion.svg>
+                    <div className="ml-4 flex-shrink-0 pt-1.5">
+                      <svg
+                        className={`w-5 h-5 text-gray-400 transform transition-transform duration-200 ${
+                          expandedCategories.includes(category.id) ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
                   </button>
                 </div>
 

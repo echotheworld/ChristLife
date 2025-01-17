@@ -660,250 +660,250 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="relative w-full py-32 bg-[#f8f8ff]">
+      <section className="relative w-full py-16 sm:py-32 bg-[#f8f8ff]">
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col space-y-16">
-            <div className="space-y-4 text-center">
-              <h2 className="text-5xl md:text-6xl font-bold text-[#3945cb] hover:scale-105 transition-transform duration-500">Frequently Asked Questions</h2>
-              <p className="text-xl text-gray-500">Everything you need to know about joining us</p>
+          <div className="flex flex-col space-y-12 sm:space-y-16">
+            <div className="space-y-3 sm:space-y-4 text-center">
+              <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-[#3945cb] hover:scale-105 transition-transform duration-500">Frequently Asked Questions</h2>
+              <p className="text-lg sm:text-xl text-gray-500">Everything you need to know about joining us</p>
             </div>
 
-            <div className="w-full space-y-4">
+            <div className="w-full space-y-3 sm:space-y-4">
               {/* Location FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  Where are you located?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">Where are you located?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     You&apos;ll find us at 51 Narra St., Villa Esperanza Phase 2, Molino 2, Bacoor City, Cavite. Don&apos;t worry—it&apos;s easy to locate. If you&apos;re not confident with directions (no shame, we&apos;ve all been there), just open the Waze app or Google Maps then search &quot;Christ Life Bacoor&quot; to guide you.
                   </p>
                 </div>
               </details>
 
               {/* First Time FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  What can I expect when I attend for the first time?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">What can I expect when I attend for the first time?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Expect to be greeted like a long-lost family member (the kind you actually want to see). From finding your seat to answering your questions, our team is here to make you feel completely at home. By the time you leave, we hope you feel encouraged, inspired, and maybe even like you&apos;ve made a few new friends.
                   </p>
                 </div>
               </details>
 
               {/* Service FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  What happens during a church service?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">What happens during a church service?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Our services are simple but meaningful. First, we&apos;ll spend time worshiping God through music—it&apos;s uplifting and a great way to refocus your heart. After that, our pastor or an elder will share a Bible-based message that&apos;s not only inspiring but also practical. Think of it as spiritual food you can actually digest on Monday morning.
                   </p>
                 </div>
               </details>
 
               {/* Service Length FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  How long does the service last?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">How long does the service last?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     We know you&apos;ve got places to be, so we keep things tight—about 1 hour and 15–30 minutes. Enough time to recharge your soul but not so long that you start wondering what&apos;s for lunch.
                   </p>
                 </div>
               </details>
 
               {/* Dress Code FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  What should I wear to church?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">What should I wear to church?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Wear whatever feels right to you! Whether it&apos;s jeans and a T-shirt or your Sunday best, you&apos;re welcome here. We&apos;re way more interested in what&apos;s happening in your heart than your wardrobe. (Though, if you wear Crocs with socks, we might just smile extra big because we love bold choices!)
                   </p>
                 </div>
               </details>
 
               {/* New to Church FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  Will I feel out of place if I&apos;ve never been to church before?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">Will I feel out of place if I&apos;ve never been to church before?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Not at all! Everyone has a first time, and we&apos;ve designed everything to make you feel comfortable and welcome. You might feel a little nervous at first—that&apos;s normal—but trust us, by the end, you&apos;ll feel like you belong.
                   </p>
                 </div>
               </details>
 
               {/* Questions FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  What if I have questions?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">What if I have questions?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Bring &apos;em on! Whether it&apos;s about faith, church, or where to find the best coffee in Bacoor, we&apos;ve got someone who&apos;d love to chat with you. Look for our pastors or any of our friendly team members—they&apos;re easy to spot because they&apos;re the ones with big smiles and even bigger hearts.
                   </p>
                 </div>
               </details>
 
               {/* Inclusivity FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  Is it okay if I have tattoos, piercings, or colorful hair? What if I&apos;m part of the LGBTQ+ community?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">Is it okay if I have tattoos, piercings, or colorful hair? What if I&apos;m part of the LGBTQ+ community?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Absolutely. We believe God&apos;s love is for everyone, period. Tattoos, piercings, colorful hair, or whatever makes you, you—you&apos;re welcome here just as you are. No judgment, just open arms and open hearts.
                   </p>
                 </div>
               </details>
 
               {/* Bible FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  How seriously do you take the Bible?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">How seriously do you take the Bible?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     We take the Bible very seriously because it&apos;s the foundation of everything we do. But here&apos;s the thing—we don&apos;t just want you to know what the Bible says; we want to help you live it. That means you&apos;ll hear messages that are both thoughtful and practical, with a sprinkle of encouragement for good measure.
                   </p>
                 </div>
               </details>
 
               {/* Getting Involved FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  What if I want to learn more about faith or get involved?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">What if I want to learn more about faith or get involved?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     We&apos;d love to help you grow! From small groups to Bible studies to volunteer opportunities, there&apos;s something for everyone. Not sure where to start? That&apos;s okay—just ask, and we&apos;ll help you find the perfect fit. Your next step is closer than you think.
                   </p>
                 </div>
               </details>
 
               {/* Doubts FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  What if I&apos;m not sure about faith or have doubts?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">What if I&apos;m not sure about faith or have doubts?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     You&apos;re in the right place. Doubts and questions are part of the journey, and we&apos;re here to walk it with you. This is a safe space to explore, learn, and grow—at your own pace. There&apos;s no rush and no pressure.
                   </p>
                 </div>
               </details>
 
               {/* What to Bring FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  Do I need to bring anything?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">Do I need to bring anything?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Just yourself! If you have a Bible, great—bring it along. If not, don&apos;t worry—we&apos;ll provide everything you need. And if you forget something (like your phone charger), someone here probably has one to lend.
                   </p>
                 </div>
               </details>
 
               {/* Non-Christian FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  Can I attend if I&apos;m not a Christian?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">Can I attend if I&apos;m not a Christian?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Of course! You don&apos;t need to believe to belong here. Whether you&apos;re just curious about faith, have lots of questions, or are simply looking for community, you&apos;re welcome here.
                   </p>
                 </div>
               </details>
 
               {/* Fellowship FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  Is there fellowship after the service?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">Is there fellowship after the service?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     We love connecting as a church family! After the service, feel free to stick around, grab a cup of coffee, and chat with others. It&apos;s a great way to meet new people and build relationships.
                   </p>
                 </div>
               </details>
 
               {/* Support FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  How can I support the church?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">How can I support the church?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Thank you for asking! There are many ways to support the ministry, from volunteering your time and talents to giving financially. Every bit of support helps us continue to serve our community and share God&apos;s love.
                   </p>
                 </div>
               </details>
 
               {/* Inviting Others FAQ */}
-              <details className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  Can I invite my friends or family?
-                  <svg className="w-6 h-6 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
+                  <span className="pr-8 sm:pr-12">Can I invite my friends or family?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Absolutely! We&apos;d love for you to bring your friends, family, or even that coworker who&apos;s always curious about church. The more, the merrier!
                   </p>
                 </div>
@@ -926,10 +926,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Empty Content Area */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      </div>
 
       {/* Footer */}
       <footer className="bg-white border-t border-gray-100">
