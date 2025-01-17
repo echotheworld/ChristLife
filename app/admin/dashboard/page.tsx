@@ -46,7 +46,13 @@ export default function AdminDashboard() {
             id,
             ...event
           }));
-          setEvents(eventsList);
+          // Sort events by date and time
+          const sortedEvents = eventsList.sort((a, b) => {
+            const dateA = new Date(`${a.date} ${a.startTime}`);
+            const dateB = new Date(`${b.date} ${b.startTime}`);
+            return dateA.getTime() - dateB.getTime();
+          });
+          setEvents(sortedEvents);
         } else {
           setEvents([]);
         }
