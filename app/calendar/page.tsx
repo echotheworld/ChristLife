@@ -418,7 +418,7 @@ export default function CalendarPage() {
                           {event.title}
                         </h3>
                         <p className="text-gray-600">
-                          {event.startTime} - {event.endTime} (PHP)
+                          {event.startTime} - {event.endTime} (PHT)
                         </p>
                         {(() => {
                           const today = new Date();
