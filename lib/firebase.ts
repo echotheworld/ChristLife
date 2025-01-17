@@ -12,17 +12,20 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-let app;
+let firebaseApp;
 if (!getApps().length) {
   try {
-    app = initializeApp(firebaseConfig);
+    firebaseApp = initializeApp(firebaseConfig);
   } catch (error) {
     console.error('Error initializing Firebase:', error);
     throw error;
   }
 } else {
-  app = getApps()[0];
+  firebaseApp = getApps()[0];
 }
+
+// Export the app instance
+export const app = firebaseApp;
 
 // Initialize Realtime Database with explicit URL
 export const database = getDatabase(app, process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL); 
