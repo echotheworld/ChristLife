@@ -479,12 +479,12 @@ export default function About() {
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-4 sm:space-y-6">
+          <div className="max-w-3xl mx-auto space-y-4 sm:space-y-6 [&_details]:marker-none [&_summary]:marker-none [&_summary::-webkit-details-marker]:hidden [&_summary::marker]:hidden">
             {/* God */}
             <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
               <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
-                <span>God</span>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <span className="flex-1">God</span>
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
@@ -502,7 +502,7 @@ export default function About() {
             <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
               <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
                 <span>Jesus Christ</span>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
@@ -520,7 +520,7 @@ export default function About() {
             <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
               <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
                 <span>Holy Spirit</span>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
@@ -538,7 +538,7 @@ export default function About() {
             <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
               <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
                 <span>Humanity</span>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
@@ -556,7 +556,7 @@ export default function About() {
             <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
               <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
                 <span>Salvation</span>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
@@ -574,7 +574,7 @@ export default function About() {
             <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
               <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
                 <span>The Bible</span>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
@@ -592,7 +592,7 @@ export default function About() {
             <details className="group bg-[#f8f8ff] rounded-xl hover:bg-[#3945cb]/5 transition-all duration-300">
               <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-bold text-lg sm:text-xl text-[#3945cb]">
                 <span>The Return of Jesus</span>
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#3945cb] transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
