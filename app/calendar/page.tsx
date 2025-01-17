@@ -402,22 +402,22 @@ export default function CalendarPage() {
                 return (
                   <div 
                     key={event.id} 
-                    className="group bg-white/80 backdrop-blur-sm rounded-xl p-4 hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#3945cb]/20"
+                    className="group bg-white/80 backdrop-blur-sm rounded-xl p-2 sm:p-4 hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#3945cb]/20"
                   >
-                    <div className="flex items-start gap-4">
-                      <div className="bg-gradient-to-br from-[#3945cb]/5 to-[#5563e5]/5 rounded-xl p-3 text-center min-w-[70px] border border-[#3945cb]/10 group-hover:border-[#3945cb]/30 transition-all duration-300">
-                        <div className="text-sm font-medium text-[#3945cb]/70 uppercase">
+                    <div className="flex items-start gap-2 sm:gap-4">
+                      <div className="bg-gradient-to-br from-[#3945cb]/5 to-[#5563e5]/5 rounded-xl p-2 sm:p-3 text-center min-w-[60px] sm:min-w-[70px] border border-[#3945cb]/10 group-hover:border-[#3945cb]/30 transition-all duration-300">
+                        <div className="text-xs sm:text-sm font-medium text-[#3945cb]/70 uppercase">
                           {eventDate.toLocaleDateString('en-US', { month: 'short' })}
                         </div>
-                        <div className="text-2xl font-bold bg-gradient-to-r from-[#3945cb] to-[#5563e5] bg-clip-text text-transparent">
+                        <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-[#3945cb] to-[#5563e5] bg-clip-text text-transparent">
                           {eventDate.getDate()}
                         </div>
                       </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#3945cb] transition-colors duration-300">
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-base sm:text-xl font-semibold text-gray-900 group-hover:text-[#3945cb] transition-colors duration-300 truncate">
                           {event.title}
                         </h3>
-                        <p className="text-gray-600">
+                        <p className="text-sm sm:text-base text-gray-600">
                           {event.startTime} - {event.endTime} (PHT)
                         </p>
                         {(() => {
@@ -426,19 +426,19 @@ export default function CalendarPage() {
                           tomorrow.setDate(today.getDate() + 1);
                           
                           if (eventDate.toDateString() === today.toDateString()) {
-                            return <p className="text-[#3945cb] text-sm mt-1 font-medium">Happening Today!</p>;
+                            return <p className="text-[#3945cb] text-xs sm:text-sm mt-0.5 sm:mt-1 font-medium">Happening Today!</p>;
                           } else if (eventDate.toDateString() === tomorrow.toDateString()) {
-                            return <p className="text-[#3945cb] text-sm mt-1 font-medium">We&apos;re excited to see you tomorrow!</p>;
+                            return <p className="text-[#3945cb] text-xs sm:text-sm mt-0.5 sm:mt-1 font-medium">We&apos;re excited to see you tomorrow!</p>;
                           }
                           return null;
                         })()}
                       </div>
                       <button 
                         onClick={() => toggleEventDetails(index)}
-                        className="p-2 hover:bg-[#3945cb]/5 rounded-lg transition-all duration-300 text-gray-400 hover:text-[#3945cb]"
+                        className="p-1.5 sm:p-2 hover:bg-[#3945cb]/5 rounded-lg transition-all duration-300 text-gray-400 hover:text-[#3945cb] flex-shrink-0"
                       >
                         <svg 
-                          className={`w-5 h-5 transform transition-transform duration-300 ${expandedEventId === index ? 'rotate-180' : ''}`} 
+                          className={`w-4 h-4 sm:w-5 sm:h-5 transform transition-transform duration-300 ${expandedEventId === index ? 'rotate-180' : ''}`} 
                           fill="none" 
                           stroke="currentColor" 
                           viewBox="0 0 24 24"
@@ -450,16 +450,16 @@ export default function CalendarPage() {
                     {/* Event Details */}
                     <div 
                       className={`
-                        mt-4 pl-[90px] text-gray-600
+                        mt-2 sm:mt-4 pl-[70px] sm:pl-[90px] text-gray-600
                         transform transition-all duration-300 origin-top
                         ${expandedEventId === index 
                           ? 'opacity-100 max-h-96 scale-y-100' 
                           : 'opacity-0 max-h-0 scale-y-0 overflow-hidden'}
                       `}
                     >
-                      <div className="text-gray-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: formatDescription(event.description || '') }} />
-                      <div className="mt-3 flex items-center text-sm text-gray-500">
-                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="text-sm sm:text-base text-gray-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: formatDescription(event.description || '') }} />
+                      <div className="mt-2 sm:mt-3 flex items-center text-xs sm:text-sm text-gray-500">
+                        <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
