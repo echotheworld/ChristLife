@@ -671,9 +671,9 @@ export default function Home() {
             <div className="w-full space-y-3 sm:space-y-4">
               {/* Location FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-none">
-                  <span>Where are you located?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">Where are you located?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -686,9 +686,9 @@ export default function Home() {
 
               {/* First Time FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-none">
-                  <span>What can I expect when I attend for the first time?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">What can I expect when I attend for the first time?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -701,9 +701,9 @@ export default function Home() {
 
               {/* Service FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">What happens during a church service?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">What happens during a church service?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -716,9 +716,9 @@ export default function Home() {
 
               {/* Service Length FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">How long does the service last?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">How long does the service last?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -731,9 +731,9 @@ export default function Home() {
 
               {/* Dress Code FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">What should I wear to church?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">What should I wear to church?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -746,9 +746,9 @@ export default function Home() {
 
               {/* New to Church FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">Will I feel out of place if I&apos;ve never been to church before?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">Will I feel out of place if I&apos;ve never been to church before?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -761,9 +761,9 @@ export default function Home() {
 
               {/* Questions FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">What if I have questions?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">What if I have questions?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -776,9 +776,9 @@ export default function Home() {
 
               {/* Inclusivity FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">Is it okay if I have tattoos, piercings, or colorful hair? What if I&apos;m part of the LGBTQ+ community?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">Is it okay if I have tattoos, piercings, or colorful hair? What if I&apos;m part of the LGBTQ+ community?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -791,9 +791,9 @@ export default function Home() {
 
               {/* Bible FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">How seriously do you take the Bible?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">How seriously do you take the Bible?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -806,9 +806,9 @@ export default function Home() {
 
               {/* Getting Involved FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">What if I want to learn more about faith or get involved?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">How can I get involved in the church community?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -821,9 +821,9 @@ export default function Home() {
 
               {/* Doubts FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">What if I&apos;m not sure about faith or have doubts?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">What if I have doubts about Christianity?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -836,9 +836,9 @@ export default function Home() {
 
               {/* What to Bring FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">Do I need to bring anything?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">What should I bring to church?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -851,9 +851,9 @@ export default function Home() {
 
               {/* Non-Christian FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">Can I attend if I&apos;m not a Christian?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">Do I need to be a Christian to attend?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -866,9 +866,9 @@ export default function Home() {
 
               {/* Fellowship FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">Is there fellowship after the service?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">What opportunities are there for fellowship?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -881,9 +881,9 @@ export default function Home() {
 
               {/* Support FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">How can I support the church?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">What support is available for newcomers?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -896,9 +896,9 @@ export default function Home() {
 
               {/* Inviting Others FAQ */}
               <details className="group bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-                <summary className="flex items-start sm:items-center justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300">
-                  <span className="pr-8 sm:pr-12">Can I invite my friends or family?</span>
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <summary className="flex items-start justify-between p-4 sm:p-6 cursor-pointer list-none font-semibold text-base sm:text-lg text-[#3945cb] hover:text-[#868de4] transition-colors duration-300 before:content-[''] marker:content-none">
+                  <span className="flex-1">Can I invite friends or family to join?</span>
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transform group-open:rotate-180 transition-transform duration-300 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
@@ -910,7 +910,7 @@ export default function Home() {
               </details>
 
               {/* More Questions */}
-              <div className="text-center pt-8">
+              <div className="pt-8 text-center">
                 <p className="text-gray-600 mb-4">Have more questions? We&apos;d love to hear from you!</p>
                 <a 
                   href="mailto:christslifeph@gmail.com"
