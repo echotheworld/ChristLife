@@ -783,7 +783,7 @@ export default function Resources() {
           {/* Reading List Introduction */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#3945cb] mb-6">
-              75 Books Recommended Reading
+              75 Recommended Books
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
               We&apos;ve been building our church with one simple foundation: following the way of Jesus. Throughout this journey, we&apos;ve found these scholarly and academic books to be invaluable resources. These resources emphasize academic research and historical context, prioritizing data over dogma, while maintaining deep respect for the transformative power of faith.
