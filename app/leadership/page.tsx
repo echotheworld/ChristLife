@@ -8,6 +8,19 @@ import Link from "next/link";
 
 export default function Leadership() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState({
+    senior: false,
+    assistant: false,
+    associate: false,
+    former: false,
+    worship: false,
+    admin: false,
+    relationship: false
+  });
+
+  const handleImageLoad = (key: keyof typeof imagesLoaded) => {
+    setImagesLoaded(prev => ({ ...prev, [key]: true }));
+  };
 
   return (
     <main className="min-h-screen">
@@ -176,6 +189,10 @@ export default function Leadership() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 px-4 sm:px-6 lg:px-8 mb-32 group hover:bg-white/50 rounded-3xl transition-colors duration-500 py-8">
             <div className="w-full md:w-1/2 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:-rotate-1">
               <div className="relative">
+                <div className={cn(
+                  "absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer",
+                  imagesLoaded.senior && "hidden"
+                )} />
                 <Image
                   src="/images/Bacoor-Church-20.png"
                   alt="Ptr. Eira Feolino"
@@ -184,8 +201,8 @@ export default function Leadership() {
                   className="rounded-2xl shadow-lg object-cover"
                   priority={true}
                   quality={85}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx0fHRsdHSIeHx8dIigjJCUmJSQkIiYoLC0sJiEoKjQqKC0wMTExJS5JQEY1OjY6Mjb/2wBDAR0XFx02HRsdNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Njb/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  loading="eager"
+                  onLoadingComplete={() => handleImageLoad('senior')}
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
@@ -209,6 +226,10 @@ export default function Leadership() {
           <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-16 px-4 sm:px-6 lg:px-8 mb-32 group hover:bg-white/50 rounded-3xl transition-colors duration-500 py-8">
             <div className="w-full md:w-1/2 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:rotate-1">
               <div className="relative">
+                <div className={cn(
+                  "absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer",
+                  imagesLoaded.assistant && "hidden"
+                )} />
                 <Image
                   src="/images/Bacoor-Church-21.png"
                   alt="Ptr. Jericho Feolino"
@@ -217,8 +238,7 @@ export default function Leadership() {
                   className="rounded-2xl shadow-lg object-cover"
                   loading="eager"
                   quality={85}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx0fHRsdHSIeHx8dIigjJCUmJSQkIiYoLC0sJiEoKjQqKC0wMTExJS5JQEY1OjY6Mjb/2wBDAR0XFx02HRsdNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Njb/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  onLoadingComplete={() => handleImageLoad('assistant')}
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
@@ -242,6 +262,10 @@ export default function Leadership() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 px-4 sm:px-6 lg:px-8 mb-32 group hover:bg-white/50 rounded-3xl transition-colors duration-500 py-8">
             <div className="w-full md:w-1/2 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:-rotate-1">
               <div className="relative">
+                <div className={cn(
+                  "absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer",
+                  imagesLoaded.associate && "hidden"
+                )} />
                 <Image
                   src="/images/Bacoor-Church-22.png"
                   alt="Ptr. Gloria Madamba"
@@ -250,8 +274,7 @@ export default function Leadership() {
                   className="rounded-2xl shadow-lg object-cover"
                   loading="eager"
                   quality={85}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx0fHRsdHSIeHx8dIigjJCUmJSQkIiYoLC0sJiEoKjQqKC0wMTExJS5JQEY1OjY6Mjb/2wBDAR0XFx02HRsdNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Njb/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  onLoadingComplete={() => handleImageLoad('associate')}
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
@@ -275,6 +298,10 @@ export default function Leadership() {
           <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-16 px-4 sm:px-6 lg:px-8 group hover:bg-white/50 rounded-3xl transition-colors duration-500 py-8">
             <div className="w-full md:w-1/2 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:rotate-1">
               <div className="relative">
+                <div className={cn(
+                  "absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer",
+                  imagesLoaded.former && "hidden"
+                )} />
                 <Image
                   src="/images/Bacoor-Church-23.png"
                   alt="Ptr. Tito &quot;Jun&quot; Feolino"
@@ -283,8 +310,7 @@ export default function Leadership() {
                   className="rounded-2xl shadow-lg object-cover"
                   loading="eager"
                   quality={85}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx0fHRsdHSIeHx8dIigjJCUmJSQkIiYoLC0sJiEoKjQqKC0wMTExJS5JQEY1OjY6Mjb/2wBDAR0XFx02HRsdNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Njb/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  onLoadingComplete={() => handleImageLoad('former')}
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
@@ -332,6 +358,10 @@ export default function Leadership() {
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden p-4 sm:p-6 hover:-translate-y-2">
               <div className="relative w-36 h-36 sm:w-48 sm:h-48 mx-auto mb-4 sm:mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3945cb]/20 to-[#868de4]/20 rounded-full group-hover:scale-[1.15] transition-transform duration-500" />
+                <div className={cn(
+                  "absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer rounded-full",
+                  imagesLoaded.worship && "hidden"
+                )} />
                 <Image
                   src="/images/Bacoor-Church-24.png"
                   alt="Jirehl Feolino"
@@ -339,8 +369,7 @@ export default function Leadership() {
                   className="object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 640px) 112px, (max-width: 768px) 144px, 192px"
                   quality={85}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx0fHRsdHSIeHx8dIigjJCUmJSQkIiYoLC0sJiEoKjQqKC0wMTExJS5JQEY1OjY6Mjb/2wBDAR0XFx02HRsdNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Njb/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  onLoadingComplete={() => handleImageLoad('worship')}
                 />
               </div>
               <div className="text-center mb-6">
@@ -369,6 +398,10 @@ export default function Leadership() {
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden p-4 sm:p-6 hover:-translate-y-2">
               <div className="relative w-36 h-36 sm:w-48 sm:h-48 mx-auto mb-4 sm:mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3945cb]/20 to-[#868de4]/20 rounded-full group-hover:scale-[1.15] transition-transform duration-500" />
+                <div className={cn(
+                  "absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer rounded-full",
+                  imagesLoaded.admin && "hidden"
+                )} />
                 <Image
                   src="/images/Bacoor-Church-25.png"
                   alt="Jericho Feolino"
@@ -376,8 +409,7 @@ export default function Leadership() {
                   className="object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 640px) 112px, (max-width: 768px) 144px, 192px"
                   quality={85}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx0fHRsdHSIeHx8dIigjJCUmJSQkIiYoLC0sJiEoKjQqKC0wMTExJS5JQEY1OjY6Mjb/2wBDAR0XFx02HRsdNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Njb/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  onLoadingComplete={() => handleImageLoad('admin')}
                 />
               </div>
               <div className="text-center mb-6">
@@ -406,6 +438,10 @@ export default function Leadership() {
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden p-4 sm:p-6 hover:-translate-y-2">
               <div className="relative w-36 h-36 sm:w-48 sm:h-48 mx-auto mb-4 sm:mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3945cb]/20 to-[#868de4]/20 rounded-full group-hover:scale-[1.15] transition-transform duration-500" />
+                <div className={cn(
+                  "absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer rounded-full",
+                  imagesLoaded.relationship && "hidden"
+                )} />
                 <Image
                   src="/images/Bacoor-Church-26.png"
                   alt="Jireh Feolino"
@@ -413,8 +449,7 @@ export default function Leadership() {
                   className="object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 640px) 112px, (max-width: 768px) 144px, 192px"
                   quality={85}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx0fHRsdHSIeHx8dIigjJCUmJSQkIiYoLC0sJiEoKjQqKC0wMTExJS5JQEY1OjY6Mjb/2wBDAR0XFx02HRsdNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Njb/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  onLoadingComplete={() => handleImageLoad('relationship')}
                 />
               </div>
               <div className="text-center mb-6">
