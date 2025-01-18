@@ -26,12 +26,17 @@ const formatDescription = (text: string) => {
   return text.replace(urlRegex, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-[#3945cb] hover:text-[#2d37a0] underline">$1</a>');
 };
 
+// Helper function to get current Philippine Time
+const getCurrentPHTime = () => {
+  return new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Manila' }));
+};
+
 export default function CalendarPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showNotification, setShowNotification] = useState(false);
   const [expandedEventId, setExpandedEventId] = useState<number | null>(null);
   const [events, setEvents] = useState<Event[]>([]);
-  const [currentDate, setCurrentDate] = useState(new Date());
+  const [currentDate, setCurrentDate] = useState(getCurrentPHTime());
 
   // Get current month and year for default display
   const getCurrentMonthYear = () => {
@@ -65,10 +70,10 @@ export default function CalendarPage() {
             return dateA.getTime() - dateB.getTime();
           });
 
-          // Filter out past events and delete them from database
-          const now = new Date();
+          // Filter out past events and delete them from database using Philippine Time
+          const now = getCurrentPHTime();
           const currentEvents = sortedEvents.filter(event => {
-            const eventEndTime = new Date(event.date + ' ' + event.endTime);
+            const eventEndTime = new Date(new Date(event.date + ' ' + event.endTime).toLocaleString('en-US', { timeZone: 'Asia/Manila' }));
             const isPastEvent = eventEndTime < now;
             
             // Delete past events from database
@@ -105,10 +110,10 @@ export default function CalendarPage() {
     setExpandedEventId(expandedEventId === index ? null : index);
   };
 
-  // Filter events for current month and year, hiding past months
+  // Filter events for current month and year, hiding past months using Philippine Time
   const currentMonthEvents = events.filter(event => {
-    const eventDate = new Date(event.date);
-    const now = new Date();
+    const eventDate = new Date(new Date(event.date).toLocaleString('en-US', { timeZone: 'Asia/Manila' }));
+    const now = getCurrentPHTime();
     const currentYear = now.getFullYear();
     const currentMonth = now.getMonth();
     
@@ -122,8 +127,8 @@ export default function CalendarPage() {
     
     return false;
   }).sort((a, b) => {
-    const dateA = new Date(a.date);
-    const dateB = new Date(b.date);
+    const dateA = new Date(new Date(a.date).toLocaleString('en-US', { timeZone: 'Asia/Manila' }));
+    const dateB = new Date(new Date(b.date).toLocaleString('en-US', { timeZone: 'Asia/Manila' }));
     return dateA.getTime() - dateB.getTime();
   });
 
