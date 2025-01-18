@@ -182,6 +182,8 @@ export default function Leadership() {
                   width={600}
                   height={400}
                   className="rounded-2xl shadow-lg object-cover"
+                  priority={true}
+                  quality={85}
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
@@ -211,6 +213,8 @@ export default function Leadership() {
                   width={600}
                   height={400}
                   className="rounded-2xl shadow-lg object-cover"
+                  loading="eager"
+                  quality={85}
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
@@ -240,6 +244,8 @@ export default function Leadership() {
                   width={600}
                   height={400}
                   className="rounded-2xl shadow-lg object-cover"
+                  loading="eager"
+                  quality={85}
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
@@ -269,6 +275,8 @@ export default function Leadership() {
                   width={600}
                   height={400}
                   className="rounded-2xl shadow-lg object-cover"
+                  loading="eager"
+                  quality={85}
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
@@ -321,6 +329,8 @@ export default function Leadership() {
                   alt="Jirehl Feolino"
                   fill
                   className="object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 144px, 192px"
+                  quality={85}
                 />
               </div>
               <div className="text-center mb-6">
@@ -354,6 +364,8 @@ export default function Leadership() {
                   alt="Ptr. Jericho Feolino"
                   fill
                   className="object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 144px, 192px"
+                  quality={85}
                 />
               </div>
               <div className="text-center mb-6">
@@ -387,6 +399,8 @@ export default function Leadership() {
                   alt="Marianne Lamberto"
                   fill
                   className="object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 144px, 192px"
+                  quality={85}
                 />
               </div>
               <div className="text-center mb-6">
