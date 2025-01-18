@@ -27,7 +27,6 @@ const formatDescription = (text: string) => {
 };
 
 // Helper function to get current Philippine Time
-// Updated function region to Hong Kong for better Asia/Manila timezone handling
 const getCurrentPHTime = () => {
   return new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Manila' }));
 };
