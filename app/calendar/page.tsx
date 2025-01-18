@@ -37,6 +37,7 @@ export default function CalendarPage() {
   const [expandedEventId, setExpandedEventId] = useState<number | null>(null);
   const [events, setEvents] = useState<Event[]>([]);
   const [currentDate, setCurrentDate] = useState(getCurrentPHTime());
+  const [isLoading, setIsLoading] = useState(true);
 
   // Get current month and year for default display
   const getCurrentMonthYear = () => {
@@ -50,6 +51,7 @@ export default function CalendarPage() {
   useEffect(() => {
     if (!database) {
       console.error('Database not initialized');
+      setIsLoading(false);
       return;
     }
 
@@ -91,12 +93,14 @@ export default function CalendarPage() {
         } else {
           setEvents([]);
         }
+        setIsLoading(false);
       });
 
       return () => unsubscribe();
     } catch (error) {
       console.error('Error fetching events:', error);
       setEvents([]);
+      setIsLoading(false);
     }
   }, []);
 
@@ -396,7 +400,43 @@ export default function CalendarPage() {
 
           {/* Events List */}
           <div className="space-y-3">
-            {currentMonthEvents.length > 0 ? (
+            {isLoading ? (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="bg-white/80 backdrop-blur-sm rounded-xl p-8 text-center border border-gray-100"
+              >
+                <motion.div
+                  animate={{ 
+                    scale: [1, 1.1, 1],
+                  }}
+                  transition={{ 
+                    duration: 1,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                    ease: "easeInOut"
+                  }}
+                >
+                  <svg 
+                    className="w-16 h-16 mx-auto mb-4 text-[#3945cb]/30" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={1.5} 
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6" 
+                    />
+                  </svg>
+                </motion.div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Loading Events...</h3>
+                <p className="text-gray-600">
+                  Please wait while we fetch the latest events.
+                </p>
+              </motion.div>
+            ) : currentMonthEvents.length > 0 ? (
               currentMonthEvents.map((event, index) => {
                 // Ensure we have a valid date
                 const eventDate = event.date ? new Date(event.date) : null;
