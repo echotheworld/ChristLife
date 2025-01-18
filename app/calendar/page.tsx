@@ -404,37 +404,19 @@ export default function CalendarPage() {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="bg-white/80 backdrop-blur-sm rounded-xl p-8 text-center border border-gray-100"
+                className="bg-white/80 backdrop-blur-sm rounded-xl p-12 flex justify-center items-center border border-gray-100"
               >
                 <motion.div
                   animate={{ 
-                    scale: [1, 1.1, 1],
+                    rotate: 360,
                   }}
                   transition={{ 
-                    duration: 1,
+                    duration: 1.5,
                     repeat: Infinity,
-                    repeatType: "reverse",
-                    ease: "easeInOut"
+                    ease: "linear"
                   }}
-                >
-                  <svg 
-                    className="w-16 h-16 mx-auto mb-4 text-[#3945cb]/30" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={1.5} 
-                      d="M12 6v6m0 0v6m0-6h6m-6 0H6" 
-                    />
-                  </svg>
-                </motion.div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Loading Events...</h3>
-                <p className="text-gray-600">
-                  Please wait while we fetch the latest events.
-                </p>
+                  className="w-12 h-12 border-4 border-[#3945cb]/10 border-t-[#3945cb] rounded-full"
+                />
               </motion.div>
             ) : currentMonthEvents.length > 0 ? (
               currentMonthEvents.map((event, index) => {
