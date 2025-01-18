@@ -12,6 +12,7 @@ export default function AdminLogin() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [focusedInput, setFocusedInput] = useState<string | null>(null);
+  const [showSuccess, setShowSuccess] = useState(false);
   const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -46,11 +47,15 @@ export default function AdminLogin() {
         throw new Error("Login failed");
       }
 
-      router.push("/admin/dashboard");
-      router.refresh(); // Refresh to update client-side cache
+      // Show success message before redirecting
+      setShowSuccess(true);
+      setTimeout(() => {
+        router.push("/admin/dashboard");
+        router.refresh(); // Refresh to update client-side cache
+      }, 1500); // Redirect after 1.5 seconds
+
     } catch (err) {
       setError("Invalid username or password");
-    } finally {
       setIsLoading(false);
     }
   };
@@ -60,6 +65,49 @@ export default function AdminLogin() {
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#3945cb]/5 to-transparent" />
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.015]" />
+
+      {/* Success Message Overlay */}
+      {showSuccess && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="fixed inset-0 flex items-center justify-center bg-white/80 backdrop-blur-sm z-50"
+        >
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ type: "spring", damping: 20, stiffness: 300 }}
+            className="bg-white rounded-2xl p-6 shadow-xl flex flex-col items-center"
+          >
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.2, type: "spring", damping: 15 }}
+              className="w-16 h-16 bg-[#3945cb]/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <svg className="w-8 h-8 text-[#3945cb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+            </motion.div>
+            <motion.h2
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="text-xl font-semibold text-gray-900 mb-2"
+            >
+              Login Successful!
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              className="text-gray-600"
+            >
+              Redirecting to dashboard...
+            </motion.p>
+          </motion.div>
+        </motion.div>
+      )}
 
       {/* Back to Home */}
       <motion.div 
