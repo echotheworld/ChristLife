@@ -403,7 +403,7 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            {/* Believing God's Truth */}
+            {/* Believing Loyalty to God's Begotten Son */}
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-4 sm:p-6 hover:-translate-y-2 flex flex-col h-full cursor-pointer transform perspective-1000 relative">
               <div className="absolute -top-3 -left-3 w-7 h-7 sm:w-8 sm:h-8 bg-[#3945cb] rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
                 <span className="text-white text-sm sm:text-base font-bold">5</span>
@@ -416,9 +416,9 @@ export default function About() {
                 </div>
               </div>
               <div className="flex-grow flex flex-col items-center">
-                <h3 className="text-lg sm:text-xl font-bold text-[#3945cb] mb-2 sm:mb-3 group-hover:text-[#868de4] transition-colors duration-300 text-center">Believing God&apos;s Truth</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-[#3945cb] mb-2 sm:mb-3 group-hover:text-[#868de4] transition-colors duration-300 text-center">Believing Loyalty to God&apos;s Begotten Son</h3>
                 <p className="text-sm sm:text-base text-gray-600 group-hover:text-gray-800 transition-all duration-300 text-center relative transform group-hover:scale-105">
-                  We value enduring truth. In a world of changing values, God&apos;s truth remains constant and reliable. Therefore, we stand firm in biblical convictions while engaging our culture with grace.
+                  We value unwavering loyalty to Jesus Christ, God&apos;s only begotten Son. In a world of shifting allegiances, our faith remains anchored in His divine identity and saving work. Therefore, we commit to faithful discipleship and steadfast devotion to our Lord.
                 </p>
               </div>
               <div className="h-1 w-0 bg-[#3945cb] mt-3 sm:mt-4 group-hover:w-full transition-all duration-500 rounded-full"></div>
@@ -652,8 +652,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-
 
       {/* Footer */}
       <footer className="bg-white border-t border-gray-100">
