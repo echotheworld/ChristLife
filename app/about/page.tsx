@@ -416,7 +416,7 @@ export default function About() {
                 </div>
               </div>
               <div className="flex-grow flex flex-col items-center">
-                <h3 className="text-lg sm:text-xl font-bold text-[#3945cb] mb-2 sm:mb-3 group-hover:text-[#868de4] transition-colors duration-300 text-center">Believing Loyalty to God&apos;s Begotten Son</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-[#3945cb] mb-2 sm:mb-3 group-hover:text-[#868de4] transition-colors duration-300 text-center">Believing-Loyalty to God&apos;s Begotten Son</h3>
                 <p className="text-sm sm:text-base text-gray-600 group-hover:text-gray-800 transition-all duration-300 text-center relative transform group-hover:scale-105">
                   We value unwavering loyalty to Jesus Christ, God&apos;s only begotten Son. In a world of shifting allegiances, our faith remains anchored in His divine identity and saving work. Therefore, we commit to faithful discipleship and steadfast devotion to our Lord.
                 </p>

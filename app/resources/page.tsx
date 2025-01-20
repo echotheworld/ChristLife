@@ -35,6 +35,13 @@ const bookCategories = [
         coverImage: "https://images-na.ssl-images-amazon.com/images/P/0062334344.01.L.jpg"
       },
       {
+        title: "What Does God Want?",
+        author: "Michael S. Heiser",
+        description: "Wondering about God's ultimate plan for humanity? Heiser breaks down complex theological concepts into clear, accessible insights about what God really wants from us. A perfect guide for understanding God's heart and purpose!",
+        link: "https://www.amazon.com/What-Does-Want-Michael-Heiser/dp/0692199047",
+        coverImage: "https://images-na.ssl-images-amazon.com/images/P/0692199047.01.L.jpg"
+      },
+      {
         title: "What is the Bible?",
         author: "Rob Bell",
         description: "Struggling with those weird or troubling Bible passages? Bell's fresh take will help you discover the Bible as a library of radical, inspiring, and human books that still speak powerfully today. Warning: May cause enlightenment!",
@@ -175,11 +182,11 @@ const bookCategories = [
         coverImage: "https://images-na.ssl-images-amazon.com/images/P/0310499305.01.L.jpg"
       },
       {
-        title: "The Mary We Forgot",
-        author: "Jennifer Powell McNutt",
-        description: "Discover the fascinating story of Mary Magdalene that history forgot! McNutt unveils the true story of this misunderstood disciple and her pivotal role in early Christianity. Get ready to meet the real Mary!",
-        link: "https://www.amazon.com/Mary-We-Forgot-Apostle-Apostles/dp/1587436175",
-        coverImage: "https://images-na.ssl-images-amazon.com/images/P/1587436175.01.L.jpg"
+        title: "Why the Gospel?",
+        author: "Matthew W. Bates",
+        description: "Ready to explore what the gospel really means? Bates reveals how understanding Jesus as King transforms everything about how we live and share our faith. A fresh perspective that will revolutionize your understanding of the good news!",
+        link: "https://www.amazon.com/Why-Gospel-Living-Jesus-Purpose/dp/0802881688/",
+        coverImage: "https://images-na.ssl-images-amazon.com/images/P/0802881688.01.L.jpg"
       },
       {
         title: "Jesus and the Forces of Death",
@@ -215,6 +222,13 @@ const bookCategories = [
         description: "Ready to meet Jesus as his contemporaries would have known him? Wright masterfully reconstructs Jesus' world, message, and mission in this groundbreaking exploration. Prepare to have your perspective transformed!",
         link: "https://www.amazon.com/Jesus-Victory-Christian-Origins-Question/dp/0800626826",
         coverImage: "https://images-na.ssl-images-amazon.com/images/P/0800626826.01.L.jpg"
+      },
+      {
+        title: "The Mary We Forgot",
+        author: "Jennifer Powell McNutt",
+        description: "Discover the fascinating story of Mary Magdalene that history forgot! McNutt unveils the true story of this misunderstood disciple and her pivotal role in early Christianity. Get ready to meet the real Mary!",
+        link: "https://www.amazon.com/Mary-We-Forgot-Apostle-Apostles/dp/1587436175",
+        coverImage: "https://images-na.ssl-images-amazon.com/images/P/1587436175.01.L.jpg"
       }
     ]
   },
@@ -783,7 +797,7 @@ export default function Resources() {
           {/* Reading List Introduction */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#3945cb] mb-6">
-              75 Recommended Books
+              77 Recommended Books
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
               We&apos;ve been building our church with one simple foundation: following the way of Jesus. Throughout this journey, we&apos;ve found these scholarly and academic books to be invaluable resources. These resources emphasize academic research and historical context, prioritizing data over dogma, while maintaining deep respect for the transformative power of faith.
